@@ -1,0 +1,743 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="570.666666666667,2208.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="494,2144" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Login" sap:VirtualizedContainerService.HintSize="452,2052" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="LOGIN CONTA" sap:VirtualizedContainerService.HintSize="418,1834" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="INSERIR CONTA DE LOGIN" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="376,52.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="244, 768, 640, 66" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='width-100 fontsize-4 color-dove-grey bordercolor-mine-shaft input__error' aaname='' /&gt;" Guid="d930fad8-15a2-45ed-8080-da1caf355196" ImageBase64="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" InformativeScreenshot="35fd05d977ced3816759fe1abf26143a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="244, 669, 640, 69" ElementType="Text" FriendlyName="'Acesse sua conta'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;p' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='fontsize-8 color-light-blue marginbottom-4' aaname='Acesse sua conta' check:innerText='Acesse sua conta' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </uix:NTypeInto.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Avançar'" sap:VirtualizedContainerService.HintSize="376,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="244, 717, 172, 54" ElementType="Button" FriendlyName="'Avançar'" FullSelectorArgument="&lt;webctrl aaname='Avançar' parentid='app' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Avançar' parentid='app' tag='BUTTON' type='' class='paddingbottom-3 rounded paddingtop-3 button fontsize-3 btn-primary margintop-4 button' check:innerText='Avançar' /&gt;" Guid="ae3fed4e-711e-4685-acc3-e3ae39204737" ImageBase64="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" InformativeScreenshot="89600164e54b03215799813110d17141.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <Sequence DisplayName="INSERIR NUMEROS DA SENHA" sap:VirtualizedContainerService.HintSize="376,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click '1'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="317, 503, 14, 31" ElementType="Text" FriendlyName="'3'" FullSelectorArgument="&lt;webctrl aaname='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3' tag='SPAN' type='' class='' check:innerText='3' /&gt;" Guid="1625316f-9b45-44cc-9b52-8fa01886e1ff" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAjCAYAAACZ6FpfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGTSURBVEhL7ZTNSwJBGMb7F7t27hZ0i04dIoigiIgO3boEHeyQUfRFJJpW9AESYRSSSUnRh6lp7c7Mvs0z04Cju65GXcKBh1F35jfP+7yz9vQuOfQb6oLC1QWF6+9AfRGHli843ZU9cgWp4UlVXaL0g6DRPWatN7JAU0lGhYqnNgaNd4do/rgZZoHGYoyKH9IJ16fPHjLlcGjLpWReEPt2CLcDa24wCNq4EjRz4G//5F6TKtLV5L69pqOwd7Ia9CZdj8d/CEKJmSedHmZ8r3/eFqg/6tJpQRCXHOSDLBvXtASN7DJKyZCRCZqwesmbnBj5giYSjF5q9jXAZwBjN0I5bNzjC0LXakwD/Eau6NHgekj7IZyIrpgysGklw1W3MDw5bV4La09bYRuhZAND5+qfdQSC8iUNOn9s4Qil+AVpNJ1iKnCg4rkWIISMhdlXjxbTXL1j+B1zVLa+9KnM0HO1+S5ZoIj8+zAvZtBARnNHIRcSpS2ccRVkWZ4udBxqxoVM3Aoa3vYvveOwg9QFhevfghz6AroemfOCoDXuAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click '2'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="425, 587, 14, 31" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl aaname='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2' tag='SPAN' type='' class='' check:innerText='2' /&gt;" Guid="730a118f-91a2-4f7e-b29a-dc643010d2a9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAjCAYAAACZ6FpfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFYSURBVEhL7ZRLSwMxFIX9i25duxPc+isUNwqCKzcVFFF8LFREfFSsiC+0IlZrKSoIraW+8ppj7oyOTRMnQ9WNzIWzmSRfTk5upqs7x/AbykB+ZSC//g40sMyxeaNQfw2gAoTFFVCuBxjZFcbcVhmg+XOJZx4tdpXQwJVLZQA+ZYA2ygpk4lG7mS1K9C9y9M5xTJ5INN4i2BMDRgu2MwM0uC2wfq3Cxa3fSWN7InZbqNquUofdM8VQbUShlWqBNd4RqPjwA9BQXqCp8yEUZdk+nhq0pVuCIASjLNvHU4GmTyW4RNhXq6UU1+/S+L4Mr5zcHN2rMCvXvETQxGHUoD4I6VsQNeGLiCAHd8kQkhO0dPGVSb7ih5As0NqVgtSApHflUgyiXWl3csG0m5kzaU1OUgzqW+C4bVIi/qLshnfMXjKOVvl4Ar6i/1Pu2HTsDLsTZSC//i2I4R22wZFj6fmhugAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click '3'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="474, 587, 14, 31" ElementType="Text" FriendlyName="'4'" FullSelectorArgument="&lt;webctrl aaname='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='4' tag='SPAN' type='' class='' check:innerText='4' /&gt;" Guid="200f5f32-0e54-4151-86f4-7a762827bd5b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAjCAYAAACZ6FpfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADaSURBVEhL7ZG7CsIwFIZ9RVdfx8VF8C0cdHFxEUQQcRQEUUQdXBRsQRErMZdjT9pTFZQ0oTiU/PAPufBxvqRSbTMooh5krgeZ+19Qfy1AKtAZbOXXO0ZQc8LhyhIIxglU6zDYhOkoaZxApIQTBbcEaA0iJSEBeisB+4sD6F1peVJ67QQipTBSUB9xvWcNaow5nO8KeKzUXYhs3wqECqiCmR+lXtOZFQgfFR8Xf4iUqLlBpPQQn0rU3KDZIR7FIhEHaE1fU2eg4a4gkKnW3/+rJQaZ6kHmlhbE4AnEbpebJVTq/gAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click '4'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="425, 587, 14, 31" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl aaname='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2' tag='SPAN' type='' class='' check:innerText='2' /&gt;" Guid="5133b490-c138-4d42-b4b5-fd5a63f16a40" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAjCAYAAACZ6FpfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFYSURBVEhL7ZRLSwMxFIX9i25duxPc+isUNwqCKzcVFFF8LFREfFSsiC+0IlZrKSoIraW+8ppj7oyOTRMnQ9WNzIWzmSRfTk5upqs7x/AbykB+ZSC//g40sMyxeaNQfw2gAoTFFVCuBxjZFcbcVhmg+XOJZx4tdpXQwJVLZQA+ZYA2ygpk4lG7mS1K9C9y9M5xTJ5INN4i2BMDRgu2MwM0uC2wfq3Cxa3fSWN7InZbqNquUofdM8VQbUShlWqBNd4RqPjwA9BQXqCp8yEUZdk+nhq0pVuCIASjLNvHU4GmTyW4RNhXq6UU1+/S+L4Mr5zcHN2rMCvXvETQxGHUoD4I6VsQNeGLiCAHd8kQkhO0dPGVSb7ih5As0NqVgtSApHflUgyiXWl3csG0m5kzaU1OUgzqW+C4bVIi/qLshnfMXjKOVvl4Ar6i/1Pu2HTsDLsTZSC//i2I4R22wZFj6fmhugAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click '5'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="425, 587, 14, 31" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl aaname='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2' tag='SPAN' type='' class='' check:innerText='2' /&gt;" Guid="0ab91d72-6cb5-46ec-85a7-19b6b4f74e4c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAjCAYAAACZ6FpfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFHSURBVEhL7ZRLSwMxFIX97V25dFNc+RMUQQUXLgql1gdU8dFaSxVbrLY+QJxWax7He2dkZtKJk6B1I3PgbCbJl5uTm1koVQTm4QLkdgFy++9AKw2Js6FGMAW0RiipgGGgsXGhjLlpG6C9vsK7iBbbJAncGNhhBuiUKmEFH8BuT2H5QGKpLlC5VhjTN9YbbbTZzsIM0GpT4uReh4vT39lbl0m17UedGfcOe7Eq8DCOKh68zgnUf/kFaI2OzfmwOMvZcW/Q+SiqZkIwznJ23AtUvVEQ1EvcV0d3Htdv83ZHxUe6etZhVrZ5uaCdbnLleRD2tyBuwqmMIF0HhG0FHd4mmTQpZBeEnQEdU2crAuS9K5tjEO/Ku3MVXE2N3lp6ossxqLwv8TQhioc4u/WW2UvG0UZfT8Al/j/xZaTXWsP+iQuQ2/8WJPAJypo0BDuv+BYAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 6" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="259, 842, 14, 31" ElementType="Text" FriendlyName="'3'" FullSelectorArgument="&lt;webctrl aaname='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3' tag='SPAN' type='' class='' check:innerText='3' /&gt;" Guid="3486c9dd-79c8-4e0d-9b38-d8cbf3e68359" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAjCAYAAACZ6FpfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGPSURBVEhL7ZRLS0JBFMf7im1b9xWiVUG0rkXUIgqCNkFF4CoMSomMHoYFGUWBJlZihYmVXudxOv+53bqj44tqEx74w9w7c373vOYODK549BvqgzqrD+qsvwNNxASlHhRVPCJNvkleFF41raclDa3Z5wNZoHhGUV1+ejsM4LOCcsIs0G5WkebTj2+aIpeSRqJ147R4IqlQ8eOTimjjQloQyAJNJQRtXru/OL0vTLqwo7xq2u+62OM7gp7f/aj2bn8AQnpVQUZYN+53BZo/FvRS1aYR0ZvmaKCWINRp+VRSrqxNFFdP2oyG6yzkBCVyPAbcnbDhOVvSNHfohjlBmJVWhvQwmI0+ThA6hBkKntH6dFGbCYcVecpHt773oa6KHQhtBws1W0jaUfUEWj2XJDhrgGYbamWBhiP+lQi/Cyt559euxKMwGW8DQpHLNTKXF9cFUGjmwK+R4rygGO+H/aAvEBzyPDPtDBBE5YraimhsW5ho7vmme6HfSY3XGZ6hpVRz2wP1VOx26oM669+CPPoAS7WZrJxqNV4AAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="281, 842, 29, 31" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' tag='SPAN' type='' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGpSURBVFhH7ZRLSwMxFIX9i25du/YPCKIIIrhx4ULBlS4UC2oXrlpqqQURFRRtFbQ+FoKvVsW+ZpLJNSfxYuvMYIVBRXLhwJA5yf2Se5O+/iWPflsOguUgWA6C5SBYDoLlIFgOghUJMbYpqHyvqOETKbLRlkRnVUXT2yLkH8kJqjatM1MJvv0/BLFaluTphHGBf/B0zkkUYn5fUksYL93VFS0cSBpIeTSY9mntRNJL2/7DCc3tfpxIohCVmjU+NhSN58PHPqsT1z1joZIuF48nBjFREPTcUqYHshFG1t5NYBbDolgcY4lBoOGauhRC51g57q55p1IlaTzwcpP+L4ipoqBXXW9YC1dhI6t4bcuBvhnO+mYsMQjcgov3xsSEqMac3LJ9g4hrzMPbcJJR/e7UeoGAFvWV5DcCyZaPpLmeEL4ZACc2s9MNyTcL1xdebGpow6d1fbV5HuJLCChzHpiaxwV6AUk+z8OYH/PIPWkIgCN6goDQcHii8VQjsA/sEEeNJz1qDgQQJIQfQuL8ZWBK+6B7CGukT8MbiIT4aTkIloNgOQjWH4Dw6A0CTORfXp4OygAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+            </Sequence>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Acessar'" sap:VirtualizedContainerService.HintSize="376,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60b12bc5-9d03-4a18-9f5d-7b695200723d" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.rico.com.vc/login/" DesignTimeRectangle="244, 586, 166, 54" ElementType="Button" FriendlyName="'Acessar'" FullSelectorArgument="&lt;webctrl aaname='Acessar' parentid='app' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Acessar' parentid='app' tag='BUTTON' type='' class='paddingbottom-3 rounded paddingtop-3 button fontsize-3 btn-primary marginvertical-1 button btn-primary' check:innerText='Acessar' /&gt;" Guid="452ad78b-ee4a-4e9d-b6be-7f5dde361ea1" ImageBase64="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" InformativeScreenshot="6f661aab620ffe037a3884c5cd9a834b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="376,52.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Insira o token&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MessageBox>
+            <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="376,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <Sequence DisplayName="ABA DE AÇÕES" sap:VirtualizedContainerService.HintSize="376,1197.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:HoverImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DisplayName="Hover Image 'chrome.exe Rico'" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="HoverImage_2">
+                <ui:HoverImage.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:HoverImage.CursorPosition>
+                <ui:HoverImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKkAAAAgCAYAAABpalg/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVISURBVHhe7Zk9aCNHFICvuRQhIZBr4ioQCCdIF0hkUiSNDTEh4CSYNCK4cKXKHFcIF8EHLlyo8MFhFQlGhXNcTLAbG8ecsQs5oEICYytYCBVSYmyECnkxRotcvLy3M7M7u1rZO4rkTPAMfJw1Ozs78+bb+dl7MPJwBgwGnTGSGrTHSGrQHiOpQXuMpAbtMZIatMdIatAeI6lBe4ykBu0xkhq0p1vSpydgAYC1v+bP/z/Qq+083y7lYErO15iXZWwwnMHLkGv3jfshaboONo35aRGScr7G6CLp2KNvHMKuReXxmz9A+qOPQ69F4X5IGkvB1OQyJEZT/nyN0UXSvyfeAuvrN/oWlQQtjT0C+PYBzH7weWiZ24gmafaMIgaV1Z8gs98E+9r5CdBqQi79nJdLwcohZV7A7jS/TyL+ou7cUn+VdvMS80WoNDtOvpPaV1DZ3oFkLHBvYgdytSteCBOWq+/L5XJQ4Zd8qXUCz6Trcp+e7VN9V5Cb34DdGm/DdQcaB3us3tEN2Cp7z7RqJ5CZFM/ziNaHNci18Bq2Z3E2j+VZUXqeVcrDnFSWtas7VbKiTAqSS0cDitvtkJwkaT+iyoL++smHoWWioCSp3cbAXGNHS2dQKV+wJRQ6UFjgM9QSE7GxnfXudUjDepWu4MzAA5TAOp37SYwy1od11sXgNVEuEcjYDhy3WbZV4+VowDHZhzsQd+pHoahNVT4gzaZTrnKQ48t7L0k7YF/iP/iyUfkG/Y3JPizC7jn+Ifp6zoWQ24VE7oOQFMtRefvc3w+oFSHB60z+XJXagvXS85Gtebqe8iSWnum2G7cz7KVEIsUtGv2IOihBCSVJoY2SSbNJPMXKQjXPDyQbUKCAXVZhUdxLTBTB0fdwjwVnIs9+B+qjQZj7DWdqvOQ+n4vva8/DLJMouBz23Kr0khSTJMhIDGVyZ7kmrLtt8+RwVwKVPghJeZ4nyHP+8uKL7kjoEbrcz1fZS4EvwOKolI/1ZAqsfY1NPkGoxC0CKqIOUlBCSdKwGXKrRle8TosZSg76k+0LlrfAfk/hIFI6fhG2R/SWRmdWmD6CBhXGF+GJb2BC6EPSYBtE2+z8pi/fbQfOQnK5SH1wZ9I6rASX2gUmnvX6F19+mKRLeZrRvTj6iO3BMW3DUOA5+q0St4hEEXXQghJqe1J3X+TRFcwZMZh81hQDJM2u7ix2YxJ14iz2miRnyW5dQKVwAuuLWRjn9bkoS4p70qdyOYSvDvXVoHysDijnnN9qfQhKK9GjzWGS3nyYCk4YCnFT4CZRhyEoMXhJRbDErMGXKHkWFgNsVdleKZyib8sQH1+DldUjKJSaYPG9lo3CuEs1MQhJeR3dfQ2XNFof/gtJGZHipogs6nfvfeXkDUtQYgiS4lL4ii2FtH/LiBP/jHSdL5XySb8X8fFlSE4vw5RvmUzxpS8g2R1KqtKHQUmqstwrxa0PhKgk5R9fjMBfX749FEGJoUjqBuy8CXX61z1YcXoeOtiJ2brsgHWw6WwXkptsyaqvik9dDLbPxT3hknT/HUqq0odBSapycFKKW598+s738Ptn7zuy/jn2Lvz4eDS03L9lOJLiG8u+mbIUNtuEf77hn3pauFUQAz+Jcohl6pQvo+LbX7sOGXmmuEtJkch9GJSktM/k24xbP0GpxE1zhiQpIt76sBMtZ3w2D8enPHCU2lfQKORhLnAaFR+l3f9EwAFyPq4nAoebO5aUiNaHQUlKqH/MvzVumtMtqcGgGUZSg/YYSQ3aYyQ1aI+R1KA9RlKD9hhJDdpjJDVoj5HUoDkz8A9PoawQR5Oz0gAAAABJRU5ErkJggg==" />
+                </ui:HoverImage.Image>
+                <ui:HoverImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="350d2cfd-da80-4768-995e-de67737b447f">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:HoverImage.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:HoverImage>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'P'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Hover_1">
+                      <ui:Hover.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Hover.CursorPosition>
+                      <ui:Hover.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="454a9a7d-ac19-4c77-af21-14588125a992" InformativeScreenshot="ddacbc931fce405db4dcde0fb810bad6" Selector="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;&lt;webctrl tag='NAVIGATION-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='NAVIGATION-DROPDOWN' /&gt;&lt;webctrl shadowhostid='' tag='P' aaname='Investimentos' innertext='Investimentos   ' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Hover.Target>
+                    </ui:Hover>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <ui:HoverImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DisplayName="Hover Image 'chrome.exe Rico'" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="HoverImage_1">
+                <ui:HoverImage.CursorPosition>
+                  <ui:CursorPosition OffsetX="-30" Position="Center">
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:HoverImage.CursorPosition>
+                <ui:HoverImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAALQAAAAhCAYAAABwZoHCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAP5SURBVHhe7Zo/ayJBGIevuQ9x38BvYL6ARTqbdCmEs7IMKSRVAldYXGEgxAODWBgJcsQrBJGEWGwKC4VgAopYKIhBLHQRcTHFe+/szLjrurk7/8TD4R14AjP77pDimclvZvPpy+cgEIQqkNCEUpDQhFKQ0IRSkNCEUpDQhFKQ0IRSkNCEUpDQhFKQ0IRSkNCEUqwpdBLuX8FsvXzS5fkqnEP6ZconnYyhV+9C4xX7nQocudYThMV6Qp82wUDvjAn+GDUh4lazLMc10GHKRe6MwXhjZk+hkTx3rycIG2sIHYbEExc5dtFm1sHzRdiljiC2x+pC75eAaWw8ZrFfgGe2k9Y18LrVovwnP5rQHogogc0Y9EGLxhfrPXGI5bugs11fNKPfhXu3Wpd5YTCE59Q1+By13sMCaK2xKMKGcaZdLEDIM19H7DYrC33ws49WDOE+yPuRRyZVH273nbVhOCsKkd5ElHjpg25GCQC9mLFE9WRAY9OyNhpiHdbWh7PY0fuVeWdelJPVIr0RHzJwcR3O5sUFJxaI3uJ17QHvG0+FdxYhsYusKLQ4DL5WrYOamX1dDociZ0O/BpE92/heVsjrXBRM8uz8DutHIU0BrVr7vGdzu+w5xEpc9EbyOx+L8kjEFo9VJw+0XUjPxohdZzWhhUztGyGMiRDEcTiMlrikbvnae9UGY4QHvptL7OegzHZXfD/qqDNrRU7X767NPp/XJrgdjwYNVtws8d03UIWe6B/ZFxWhHCsILQ6DLvGCxxCUN2qNpets5F92QSEhRgXX5/sVM7PL53zev7QB7t7m+xhP7oZikOV3jDPlGtxGkgtZm9htlhda7n4y49ppikz79DDLpR8rNOZq5+9g51GDkG0Ory8DiVQVyizDi0w9l7WJnWdpoQ9u5KntT83avdMvrI/RILA415dgDm5TJUiEWXRZJXJMoXy6WOvE67uEUOASDuaydljMMQbt2D5O7DJLCu2ek+1I8eThUC4Ao5Rz3CZYtxQyomzmUMjjBc/mcXMslONxo52a/zhzlOfj9ohE7DbLCS2/DJp3zy7PTcSd9Cy/yqs4jAcYASKBOO6W15AoonRsmAkp393EtZ28jutULdH9GGdkxOiIOCLvpCdtiNFdtDIsIbQ8DL5zs2CD77QYB76Jmw3cYbUW333tzWhV56/yGEt+WAlFq9Do2+aejKGRX/xgIj+s8MWB7W0KeqsGsUP6uqkSyx8K18Dn53fPvbssfPWRSMTm2arQs/tgbHq9Aif0p57YMNsVWuKvmGI3rlyeEcQabFXo0FWTH8jY/zeT0MQHsFWhZ7cS2PTyA33QIDbO/4kcBPFBkNCEUpDQhFKQ0IRCBOE3mYi+B3E4IAQAAAAASUVORK5CYII=" />
+                </ui:HoverImage.Image>
+                <ui:HoverImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="6ec4528f-36db-4df4-920e-d27431e8c872">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:HoverImage.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:HoverImage>
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe Rico'" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAnCAYAAABg1jQjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAPsSURBVGhD7Zg9ayJBGMevuQ+Rb+A3MF/AIp0cpEshXCrLkEJSJXCFxRUGQjwwiIWRIEe8QhBJiMWmsFAIJqCIhQtiEAtdRLKY4rlndmbcdZ3cnS87l5cZ+Adm9tnB/c0z/2cmnzY+74KSHCnYEqVgS5SCLVEKtkQp2BKlYEuUgi1RCrZErQF2Cq4fwWq9QkrwfBkdQ+ZhQid9GkOv0YXmI/Y7VdgTxr8NrQ77sAUmMjGf8M+oBVFRzKLar4MBEwq5MwbzmVCfQDN1LI5/I1oRdgSSdxRy/EQnROD+JCKIUyJaDfZWGQhi8zaH/SLckwxsaOAXxeLCHPxogT5g9oDNHPRBiyXm430JiBe6YJDdwprZ78K1KFYwLwyGcJ8+h4Ar1r9TBK09ZkHY0KL0UhHCvtk4r7QS7O2fffzFQ7jepf3oLfngPlxuuWMjcFRiH/nM7OGhD4ZlDwBGKWtD9GVBI9OSNhpiHMY2hlMr6f3KvjAvgiOxqN6IDpm48DvTeTEZ2OIZbRqnD2jfvCu+kCDr1QqwWWF8rNlFy/JaQaFkvg79OkQ3HeObOQbWvWBkAXKzmRlEWBYcO9Y579FMdh5DvEwXoZn6Tsdi1ObIwtpxvLh3ITMd807Lw2Yfql+wj7HEfryrUMbKFKDIz/1nOpgjLH4Xp9jPQ4VkJb4fc8VZsawuGFfnVp/O64DvlE+DJglulWnWhmrQY/0954JL1JKwWWEUWAa1FgQbs8cyDTLyL9nDAOH2Fz7fqlo1gj+n8/6lDTDrrffRcq6GbJDUC7SoSh0uo6k5b/dKy8HmWcM91akW89C7m6kPegsbfdz9G5y61SDsmMMfyEIyXYMKqRnMw2e83UMtBXv7glewPzU76zMPpI/bPTQ/18ZuHi7TZUhGiB0tYyMTqBzOx7rlD5xCOHQK2zPeHmFzjEHbd457oyVgi33ZKQ6FF0q+OGY576r69mmC2856CiS1DFoLEtZYOE8tRE/PXoz2CnTcaXteaXHY/MZona0Fzy2xM/fUL/lxDrc8butoKIFZdg7JEgIhwwQWf3cdRz9+pOvU7EUIokVx2+gwi+Fn7icd4hLO2gvC5oXxhROAQzRDcYt/YycQzEytTbPW2cx2bfY4SLTgpSYcq0Gz75gbLyvNwvxlhV9q6MJhwzO/0a5DfEfOrXe5ArmCAkF6tu5d5eBr4GNd7aXDnp53sRmNKhxI2L6vRfJhcwWrFvTmmeDZO5V02OGzFi1O5P/TCra3mp4esBmVGymXidei/2cjH1AKtkQp2BK1MGz48undSvS965SC7ZDoe9cpZSMSpWBLlIItUQq2RCnYEqVgS5SCLU278Btb6gpfAV5EQAAAAABJRU5ErkJggg==" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="5194e14c-c3b4-4ff6-b55f-bb15600ab73e">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:ClickImage.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ClickImage>
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(pgdn)][u(hk)]" Version="V1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NKeyboardShortcuts>
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe Rico'" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAkCAYAAAAJgC2zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMTSURBVGhD7Ze9a9tAGIf1X9xYyG5v1tZs8VSDF0PAmA4ldPEUPBnRoZgunYLwpGz2UNwh4KnYmzK5Q8AZAh4yaAho1H/wy1m5k1/Jsr5iX5YbHrDvW4/u3ntlBEEAzenRohWhRStCi1aEFq0ILVoRWrQitGhFaNGK0KIVoUUrQotWhBatCC1aERmi17AvDBgGpzaCm9bmeYLetp5T/+kieHLQEv8P0brdvPVdWqLMhLX0E2MvYMk+w0VUvhjuxok4M3HeteAsxbiE1PYxLCzCths47bT6TzDbfdgpY5clc0evx00xIeMy9uu9aU/U1zG652WVRG9Jyi4hmmB+n2EdjXEM0RKGzu06GrcK2aGD7Fh2PYcfqyc7/sJ+e0AiunWzgud5+/iif0w0h3XgPMqx80QPMAvHW8Od/kbvM4vGMX+40Tr32yeRL5eI/mJjFdZtsPo7QutMjtGE/SDXV56cGO1h0pUT9TGXkrY82GiG5QaaY/G2qWi5cw+RFL2lwXfYy7Y+T7TciYIX3r4h63qYPOe034OIbjvYkDr/ri/GMHD1xyN9ypF7GdKJetPdRO6vuijfPVjmjg4FEohos2FGv9mlw09HSdGcNCFZOzp+Og+LpuvM3TwZ5IoO/DkGTCyiO4EXlrsY1ZJlnKwYTYSFkAew/q3hXJLjP7RwJX4XFR087p+mXfskLThPtP8B0c8u7Ghd4h6K+pQjXzRnMZSTiTjFJTGx6P4ducSqit5etLHjT1At+gDs22y3oSpQSHRwP0JdTNgcrzC/FuLZIB63K8boKKPhsjry9EiOEjpKxOg0vpJTW5FiommoqNUj6Sy5S98rmuP/t+Oyi4g+5mUos47NDH25DsYTgeQdU5KComlOLUmJWVmXoSQlvUvm6D6vM0VduugTpnckRtNnbt6cMo+mkHQuJO1rMStGC6KdniE6+MgPFnoZ+nwd8iSzK8xkdlWB4qJjObWB87Q3/BGij/0Jnkjvdl+/Bup8LfG0sDglRGvegxatCC1aEVq0IrRoRWjRitCiFaFFK0KLVoQWrYQAr4uxxD0rGzbNAAAAAElFTkSuQmCC" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="0a6a5bdd-5221-44d8-b496-2ea2cc9034db">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:ClickImage.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ClickImage>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="INSERIRI TICKER DA AÇÃO" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="AERI3F">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a91c2c84-7a74-4813-9b0c-e401d92a7507" InformativeScreenshot="e7a90e7c421a4ee9d54165c1cb8e7e16" Selector="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;&lt;webctrl aaname='Empresa/Código' tag='SPAN' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='INPUT' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:TypeInto>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="INSERIR QUANTIDADE" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="4">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="579a97f4-efe6-45e1-b2ba-4190c3c8c45a" InformativeScreenshot="36cec70f1e01eaac883cb8dfe070f5e0" Selector="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;&lt;webctrl aaname='Quantidade' tag='SPAN' /&gt;&lt;nav up='1' /&gt;&lt;webctrl name='qtd' tag='INPUT' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:TypeInto>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="07793f8e-c21e-4c28-b86c-ff05f3fcf9bc" InformativeScreenshot="86c529440960aa8531f4f652df6dc984" Selector="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;&lt;webctrl aaname='Enviar ' tag='BUTTON' /&gt;&lt;nav up='1' /&gt;&lt;webctrl aaname='Enviar ' tag='BUTTON' innertext='Enviar ' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <Sequence DisplayName="INSERIR ASSINATURA ELETRONICA CASO SEJA NUMEROS" sap:VirtualizedContainerService.HintSize="334,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK 1" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9d79a26-6911-40b7-aed3-73372ac5df01" Selector="&lt;webctrl aaname='3' parentid='modal-root' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK 2" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9d79a26-6911-40b7-aed3-73372ac5df01" Selector="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK 3" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9d79a26-6911-40b7-aed3-73372ac5df01" Selector="&lt;webctrl aaname='4' parentid='modal-root' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK 4" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9d79a26-6911-40b7-aed3-73372ac5df01" Selector="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK 5" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9d79a26-6911-40b7-aed3-73372ac5df01" Selector="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK 6" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9d79a26-6911-40b7-aed3-73372ac5df01" Selector="&lt;webctrl aaname='3' parentid='modal-root' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK 7" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9d79a26-6911-40b7-aed3-73372ac5df01" Selector="&lt;webctrl aaname='9' parentid='modal-root' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="CLICK 8" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9d79a26-6911-40b7-aed3-73372ac5df01" Selector="&lt;webctrl aaname='0' parentid='modal-root' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+              </Sequence>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4fb5f368-eaec-411f-8de5-e2ff8e2e5c7c" InformativeScreenshot="982e8f240d305792b3bd3110e83f4fdd" Selector="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;&lt;webctrl aaname='Enviar' parentid='modal-root' tag='SPAN' innertext='Enviar' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAFI0lEQVRYR8WWW2wUZRTHT3e3u3Pb3flmu3e6l5mdmW9aLkKiSLAhBhOjL4QYfRGfiDHw4IOBqCExmhAM0XgpVFEkUok0FkEEQk0FBLFQbEtDKZcWEAps2ba7URNNvATWM7RLp8vwOj78Xv57znfOd875ziyUy+X/FVvRSWxFJ7EVncRWdBJb0UlsRSexFZ0EBJYFhufglfQsaE+HoCcnLs5TYesYZc9OUO8EcqNg8IeHNf+q41qU7FNikBJ44DkGXDwDqwM8lBoC0Kql4LAWh2GdzDuvBjaN6sxgyagtof/1EZ3/7owmvfRtmtQdzYXgmByAWSECcSJOJuCeTEAYzAnb0Kn8IDCR4aNKaHlGEFwBjgWPJYHtegoGNHFd0aj9y87XJK8z1wfVwIof5CAkKwl4MXjCLwiHsqTTzqmaCznmZKOPYVK1PohwHKwKCpiAUHOGhj8pGW5bn2q65MDacEgEIgYBHouFoa2eoPP9hkXqNW9zZ1pj+nuzTJxxuYFhGeClIKwMCDWob522mYHp/2+VVi5QX3ltVHriyYgEcNMQH0LxttXA7P9lKq0YpYJ6VpPm41x8PE69Axio/pzCgOD2gBj0g4S32BITNqM+I0Be58YGVHHVmOHX8g1iY5dCXi0Zvt+mbdzlazT405eNWRcMG+F3rKU7kub6302EpPNGHdyiAvSqYWjNRGGYSiwGgs0RDtxuN3BY+vfiZOP0oZMUqXtknxye/X0uChOGH0YbJNiajsEX2VjTDZ35w2J755BC5gJOaK9FvN2mJpe+TVNwYXYCsBLQp9XBjnQUrhkh2BJhAdw1UONxwfqwf0P1zS9q/sLDXmbuczhg3VoUig0CFBoJbMtG4fVMHLpyBKs1bd+ncC9jEO9YRRilXOGAmuAPaEnYpSTMJwn9mMBOrMCAJt29/YYQC9tj7DrrQVMU2xuzj3gCHDyLve3WIlDACpzWI3BQnwUdSJcWfdrqc4WKH2KZmNGKgMNRPKJIYqcSgk6ZQEs2gS0gsCdTByeUIJgtKBncmuqbT1E6JfsWL5ujQ2ujAicw8SHdDz8qBHZmY9CGHFHqlll9elWxBQYV5rhV7JClZ1pwIZ2lBLbLCfg5J8E3mMBxWcTgtautttVc1Wp+fWuesfjzOTk4OZVALw5tWyYCzUo9nFbJDuu8nVL41+BQNvim9ZBumT+3Pk5ClwwRPsM2dGMCZgV6coEXrXYmuOVmvB6TvCEV96vxJcewBUOamQAHu+UYXia5fNzw/lOxwyde3qfGFsL7cpLiE/l7xiG4Rq9R/wu75Oj8fpUsuajyn2Kwe79PMTZESVPJEHCHWFvixlbW/nmJihsu6ULTYI57HLffRxhwRoyrutD9QTbhgWVqGnak6pqtP1awCVrhdwy6aH9WgrUi59mVZNttbB7IOPWUOxfNXrrnqYUAUAPwKMfzOFwddsbV5ClXvEXZpeZANidwk3nwe+L2ePsVbu8DhvM+OjKhNfXxCMixCCbgckET7vS8IbK4vTahwX2rs0LeEE4ezEXnDumTL6IlKd3dCbzLA19nQt4eNbQRS32vz9WMG8zEFYOsbM+EgZAgEPyq3k1gCSZw3SBgbq/LVFzwCxWbC5TtKRrMVXyaF2/q3P4Ryj7fTxO+Par5yZ2ZgB8T+AoPbcWndkoLL8Dha75FfX34ZRzBZ34FK9Y1pPFvXG4Ip/oaErAbhzqIq9yPX1TbPwlOYis6ia3oJLaik9iKTmIrOomt6CS2onOU4T9CHvP7YLk9KQAAAABJRU5ErkJggg==" InformativeScreenshot="22a7ce2ee2583938f16875186c1f7158.png" Selector="&lt;html app='chrome.exe' title='Login' /&gt;" Url="https://www.rico.com.vc/login/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

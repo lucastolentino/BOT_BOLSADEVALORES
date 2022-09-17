@@ -1,0 +1,227 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="teste" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="570.666666666667,1170.66666666667" sap2010:WorkflowViewState.IdRef="teste_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,1106" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Rico - Empresa digital de investimentos" sap:VirtualizedContainerService.HintSize="434,1014" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="242,796" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click '3'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://arealogada.rico.com.vc/acoes" DesignTimeRectangle="961, 636, 14, 23" ElementType="Text" FriendlyName="'3'" FullSelectorArgument="&lt;webctrl aaname='3' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3' parentid='modal-root' tag='SPAN' type='' class='' check:innerText='3' /&gt;" Guid="540abc3c-1bd7-4407-9055-bc6282a9bac0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEiSURBVEhL7ZLBSsNAEIZ9Rd8i5zyAF++5+QjiufQYRMghEYpKA2JE6KEWab3EQg9mM7u/E1yaTTJNVOqlOvBD2Mx8zPwzR8cXBfahf9Cw/hLIj0oEybD8Vl0HFK7xhTAIW3W/BxIVEWaFZXDkC4LXyhkE+alGTpbAkT2UYl4PSCF4MthYAMggmSgh71M7QArnK2MJThQGaVZ2xqq0syMv1niuRmKeckarYrP6pkfeZX0vXkzI3i2J6TfXzdxBsxu61VvP8kXTdAGkcHJHOOu8s8YaSwuqxnP/NUHTetWSD6fzegHLeW9HhHTrA8PeNMJ7QjAlJK8Gyr7D8GVfuXXSaJHdVk/MHrtHKZs9LjF64WN0gfydc4ejWD5KGfQDHSyowAc3CfD+QMtdpQAAAABJRU5ErkJggg==" InformativeScreenshot="883d54ff7e244551de44a624c2d91ec2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1012, 636, 26, 23" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' idx='3' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' type='' parentid='modal-root' tag='SPAN' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEdSURBVEhL7ZSxbsIwEIb7irxF5z4ACzuvwIQ6dEJILGxZMkGlqANdggQDQkIUpCARx+e/TnMYxxLQAjWLT/ql6O4/f7pL4qfGa45HKIC9KYC9KYC9KYC1BNofhHQHCAUTYq8w+izw4viHWzZsqZYv1VlyLSd0nJoDLtBbsflEiA2hZfXcBdyaWSNKhclMohtLvE0J85zzOrKFND13AEtMCjZq6DCqGxt9ieQAVwqDfpW/HRwTvtiXLY8T2WpaG0neq9zt4DEhY988rZuM0iP44Hn8xBmh6fh7a679xzs2h0Mhtnu03yzoPPi6r/rZWn/VQ4gc/0XwNf9xualkz0UnhOSHy+BSf7u5fqTXGm0sf6GQTuXvLxCfCmBPyvENkADnDCr23WYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click '2'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://arealogada.rico.com.vc/acoes" DesignTimeRectangle="619, 692, 14, 23" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' type='' class='' check:innerText='2' /&gt;" Guid="d22fdcce-2adc-4b1c-bec1-a83d0374449b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEhSURBVEhL7ZO9SgNBFIV9Rd8ita+QKs12aWy2TB1SBpsURpAlMAguREiRQiOiBlZ0Z2fmeAcm7vxmg8RGPXCaPXc+7s69c3I6qnEM/4O6/fdAHFkpsf5AKwVUW4nxJY/UR0Ec+T2dSkkpsEUIC0FMgZszEArlSuC8EJg9Wt/fJYbeuQA0fjbF9C/FlZ1RpxsTkVhhZwGowbwylbVE7mTk27ar9Z2bJS477t6qvbvyxs0OB00E2NcUFaYTNz8Q1GC6NQxStRFBTTeIOineDEGLJpZ73WjvB80ESnspExDtJKh3LfEgDIDEXyWyBEQ7CjpjEi/WcldPAv1InW0PRG9sqbBbJS0NGc4bZJ4HF+4z8UA04toQOuRP7qdA3/evBdX4BFkM8RNe+pNrAAAAAElFTkSuQmCC" InformativeScreenshot="ea2a90e66f6f4dce0ee466a23703ab0a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="670, 692, 26, 23" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' idx='4' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' type='' parentid='modal-root' tag='SPAN' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEdSURBVEhL7ZSxbsIwEIb7irxF5z4ACzuvwIQ6dEJILGxZMkGlqANdggQDQkIUpCARx+e/TnMYxxLQAjWLT/ql6O4/f7pL4qfGa45HKIC9KYC9KYC9KYC1BNofhHQHCAUTYq8w+izw4viHWzZsqZYv1VlyLSd0nJoDLtBbsflEiA2hZfXcBdyaWSNKhclMohtLvE0J85zzOrKFND13AEtMCjZq6DCqGxt9ieQAVwqDfpW/HRwTvtiXLY8T2WpaG0neq9zt4DEhY988rZuM0iP44Hn8xBmh6fh7a679xzs2h0Mhtnu03yzoPPi6r/rZWn/VQ4gc/0XwNf9xualkz0UnhOSHy+BSf7u5fqTXGm0sf6GQTuXvLxCfCmBPyvENkADnDCr23WYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click '4'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://arealogada.rico.com.vc/acoes" DesignTimeRectangle="903, 692, 14, 23" ElementType="Text" FriendlyName="'4'" FullSelectorArgument="&lt;webctrl aaname='4' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='4' parentid='modal-root' tag='SPAN' type='' class='' check:innerText='4' /&gt;" Guid="f65f2724-010a-440e-9008-0746c7265947" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAC7SURBVEhLYwhc/vM/NfCoQYTxqEGEMZEG/f6/++N/OLh0DlMNEQb9+j//JdQEKCDLoLo7//7/ghoAA6QbdOjv/8d/oLqRAGkGbf7z/9IPqE4guPTyH5RFkkGogfv43u//gfdINgg1cH+9+/M/AyROqkEZN5AC98ff//M3Q+VIMgg5cP/8+7/7EJIcKQahpxdC4PE9WhuUsff3/77jOPAjhNduXIeINe/EYRBeTHr048BUM4gAHrYG/fwPAAX27jJPnpGkAAAAAElFTkSuQmCC" InformativeScreenshot="4b2423bb8c46b133c9e2bebdcdb0a971.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="841, 692, 26, 23" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' idx='5' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' type='' parentid='modal-root' tag='SPAN' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEdSURBVEhL7ZSxbsIwEIb7irxF5z4ACzuvwIQ6dEJILGxZMkGlqANdggQDQkIUpCARx+e/TnMYxxLQAjWLT/ql6O4/f7pL4qfGa45HKIC9KYC9KYC9KYC1BNofhHQHCAUTYq8w+izw4viHWzZsqZYv1VlyLSd0nJoDLtBbsflEiA2hZfXcBdyaWSNKhclMohtLvE0J85zzOrKFND13AEtMCjZq6DCqGxt9ieQAVwqDfpW/HRwTvtiXLY8T2WpaG0neq9zt4DEhY988rZuM0iP44Hn8xBmh6fh7a679xzs2h0Mhtnu03yzoPPi6r/rZWn/VQ4gc/0XwNf9xualkz0UnhOSHy+BSf7u5fqTXGm0sf6GQTuXvLxCfCmBPyvENkADnDCr23WYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click '2'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://arealogada.rico.com.vc/acoes" DesignTimeRectangle="619, 692, 14, 23" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' type='' class='' check:innerText='2' /&gt;" Guid="ad818615-5388-44a8-86c9-15ed9943d755" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEhSURBVEhL7ZO9SgNBFIV9Rd8ita+QKs12aWy2TB1SBpsURpAlMAguREiRQiOiBlZ0Z2fmeAcm7vxmg8RGPXCaPXc+7s69c3I6qnEM/4O6/fdAHFkpsf5AKwVUW4nxJY/UR0Ec+T2dSkkpsEUIC0FMgZszEArlSuC8EJg9Wt/fJYbeuQA0fjbF9C/FlZ1RpxsTkVhhZwGowbwylbVE7mTk27ar9Z2bJS477t6qvbvyxs0OB00E2NcUFaYTNz8Q1GC6NQxStRFBTTeIOineDEGLJpZ73WjvB80ESnspExDtJKh3LfEgDIDEXyWyBEQ7CjpjEi/WcldPAv1InW0PRG9sqbBbJS0NGc4bZJ4HF+4z8UA04toQOuRP7qdA3/evBdX4BFkM8RNe+pNrAAAAAElFTkSuQmCC" InformativeScreenshot="ea2a90e66f6f4dce0ee466a23703ab0a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="670, 692, 26, 23" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' idx='4' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' type='' parentid='modal-root' tag='SPAN' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEdSURBVEhL7ZSxbsIwEIb7irxF5z4ACzuvwIQ6dEJILGxZMkGlqANdggQDQkIUpCARx+e/TnMYxxLQAjWLT/ql6O4/f7pL4qfGa45HKIC9KYC9KYC9KYC1BNofhHQHCAUTYq8w+izw4viHWzZsqZYv1VlyLSd0nJoDLtBbsflEiA2hZfXcBdyaWSNKhclMohtLvE0J85zzOrKFND13AEtMCjZq6DCqGxt9ieQAVwqDfpW/HRwTvtiXLY8T2WpaG0neq9zt4DEhY988rZuM0iP44Hn8xBmh6fh7a679xzs2h0Mhtnu03yzoPPi6r/rZWn/VQ4gc/0XwNf9xualkz0UnhOSHy+BSf7u5fqTXGm0sf6GQTuXvLxCfCmBPyvENkADnDCr23WYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click '2'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://arealogada.rico.com.vc/acoes" DesignTimeRectangle="619, 692, 14, 23" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2' parentid='modal-root' tag='SPAN' type='' class='' check:innerText='2' /&gt;" Guid="ccaebf82-7161-41b6-b374-c3f2ad2cf45a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEhSURBVEhL7ZO9SgNBFIV9Rd8ita+QKs12aWy2TB1SBpsURpAlMAguREiRQiOiBlZ0Z2fmeAcm7vxmg8RGPXCaPXc+7s69c3I6qnEM/4O6/fdAHFkpsf5AKwVUW4nxJY/UR0Ec+T2dSkkpsEUIC0FMgZszEArlSuC8EJg9Wt/fJYbeuQA0fjbF9C/FlZ1RpxsTkVhhZwGowbwylbVE7mTk27ar9Z2bJS477t6qvbvyxs0OB00E2NcUFaYTNz8Q1GC6NQxStRFBTTeIOineDEGLJpZ73WjvB80ESnspExDtJKh3LfEgDIDEXyWyBEQ7CjpjEi/WcldPAv1InW0PRG9sqbBbJS0NGc4bZJ4HF+4z8UA04toQOuRP7qdA3/evBdX4BFkM8RNe+pNrAAAAAElFTkSuQmCC" InformativeScreenshot="24734a77cf46c71c030fff9bc82b19e4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="670, 692, 26, 23" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' idx='4' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' type='' parentid='modal-root' tag='SPAN' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEdSURBVEhL7ZSxbsIwEIb7irxF5z4ACzuvwIQ6dEJILGxZMkGlqANdggQDQkIUpCARx+e/TnMYxxLQAjWLT/ql6O4/f7pL4qfGa45HKIC9KYC9KYC9KYC1BNofhHQHCAUTYq8w+izw4viHWzZsqZYv1VlyLSd0nJoDLtBbsflEiA2hZfXcBdyaWSNKhclMohtLvE0J85zzOrKFND13AEtMCjZq6DCqGxt9ieQAVwqDfpW/HRwTvtiXLY8T2WpaG0neq9zt4DEhY988rZuM0iP44Hn8xBmh6fh7a679xzs2h0Mhtnu03yzoPPi6r/rZWn/VQ4gc/0XwNf9xualkz0UnhOSHy+BSf7u5fqTXGm0sf6GQTuXvLxCfCmBPyvENkADnDCr23WYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click " sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://arealogada.rico.com.vc/acoes" DesignTimeRectangle="961, 636, 14, 23" ElementType="Text" FriendlyName="'3'" FullSelectorArgument="&lt;webctrl aaname='3' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3' parentid='modal-root' tag='SPAN' type='' class='' check:innerText='3' /&gt;" Guid="f0c4fc31-9c88-4fcb-812e-b0eeb5a32aa8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEiSURBVEhL7ZLBSsNAEIZ9Rd8i5zyAF++5+QjiufQYRMghEYpKA2JE6KEWab3EQg9mM7u/E1yaTTJNVOqlOvBD2Mx8zPwzR8cXBfahf9Cw/hLIj0oEybD8Vl0HFK7xhTAIW3W/BxIVEWaFZXDkC4LXyhkE+alGTpbAkT2UYl4PSCF4MthYAMggmSgh71M7QArnK2MJThQGaVZ2xqq0syMv1niuRmKeckarYrP6pkfeZX0vXkzI3i2J6TfXzdxBsxu61VvP8kXTdAGkcHJHOOu8s8YaSwuqxnP/NUHTetWSD6fzegHLeW9HhHTrA8PeNMJ7QjAlJK8Gyr7D8GVfuXXSaJHdVk/MHrtHKZs9LjF64WN0gfydc4ejWD5KGfQDHSyowAc3CfD+QMtdpQAAAABJRU5ErkJggg==" InformativeScreenshot="44efcb7f5b9860400a7096080c373baf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1012, 636, 26, 23" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' idx='3' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' type='' parentid='modal-root' tag='SPAN' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEdSURBVEhL7ZSxbsIwEIb7irxF5z4ACzuvwIQ6dEJILGxZMkGlqANdggQDQkIUpCARx+e/TnMYxxLQAjWLT/ql6O4/f7pL4qfGa45HKIC9KYC9KYC9KYC1BNofhHQHCAUTYq8w+izw4viHWzZsqZYv1VlyLSd0nJoDLtBbsflEiA2hZfXcBdyaWSNKhclMohtLvE0J85zzOrKFND13AEtMCjZq6DCqGxt9ieQAVwqDfpW/HRwTvtiXLY8T2WpaG0neq9zt4DEhY988rZuM0iP44Hn8xBmh6fh7a679xzs2h0Mhtnu03yzoPPi6r/rZWn/VQ4gc/0XwNf9xualkz0UnhOSHy+BSf7u5fqTXGm0sf6GQTuXvLxCfCmBPyvENkADnDCr23WYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click " sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://arealogada.rico.com.vc/acoes" DesignTimeRectangle="790, 692, 14, 23" ElementType="Text" FriendlyName="'9'" FullSelectorArgument="&lt;webctrl aaname='9' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='9' parentid='modal-root' tag='SPAN' type='' class='' check:innerText='9' /&gt;" Guid="2c0cda20-1ba1-451d-9330-1a804ecfc4b1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAE2SURBVEhL7ZMxb4MwEIX72/sTMnbMkJElEkOnbFGGRqoYGGhFo1bQipBKJS1q4fx6pkb4DCIMmdo+6Qnw3X0+G/viclXhHP4HnfafA90QgjegJHTi9ywneJuBfHYPNLtXKGyAqy+FdSBrtB0QIa5MAas8Kmx3BH+nEH+YQVZ1JMxFnQt6UGg55SthZsdWNdaFCUIhvLVjDsjbmzxWFMrExrzs0sSzRMYEyD+YrIEZG99ZoFTG5NISZdJ0Yi0StZe5CbLGQRtC2rL4+fhEuGrGa1w/d91ojYPYi5euqzGdBOm/4+vZXR5/p4epeyRcYxHW8Iz1EudWt3Ek80dAjgNC1p74T4WlEx9cmt2JFxG2ubw2WdL/owMgntkUDKnYuyf+x9NAvDXlO9+7qN9J6+l7dMK/FlThGwYgcJualLGUAAAAAElFTkSuQmCC" InformativeScreenshot="4c0a08c63b69559682b3815b92e7827e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="841, 692, 26, 23" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' idx='5' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' type='' parentid='modal-root' tag='SPAN' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEQSURBVEhL7ZS/CsIwEMZ9dh/B0dHB0QdwEMFBRHDp0EGlgkJFQRGViundZ2rTmkb8r3HJwQfl7sv9yCVNqdwW+Icc2Joc2Joc2JocWCpGY8IID4Bg5CGOjOGMUDX8g70y7KmQT9Rcq5ps1DRqBjhGd6PMN0LsCHVtzVfA9YW2RWJMF4SWT+jMGUuh8jKi1QXyBTBhGiujhA68orHcIwQZnBn9Xpr/HOwztsoXra+bJKppEwnGae5z8IgRKd8yLJpyhRdw5vn/jiNGzfB3s4a/OOO8ORi+vkb68wHdB793qyva+NM1DM/wPwS/8x8nkwqOqmiEoOzjITjRay/XWXKs3k7zyyML5/T8A2JTDmxJAidOb6uO9A0vbwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click " sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ce79e2a-8713-48a7-82d9-1df19b0f74fa" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://arealogada.rico.com.vc/acoes" DesignTimeRectangle="790, 636, 14, 23" ElementType="Text" FriendlyName="'0'" FullSelectorArgument="&lt;webctrl aaname='0' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='0' parentid='modal-root' tag='SPAN' type='' class='' check:innerText='0' /&gt;" Guid="9f2ba5f1-6fa1-4a24-9b8f-189336f3f57b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAbCAYAAABxwd+fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADHSURBVEhL7ZO9CsIwEMd9RZ/JZ3DpCziLYwchg1sdurlYqA5VRCl0SZrc34pXmoSIoJmqB//lPn53+bjJdCERQ3/Qe/0eSCEpCDeJwQhoaoPlRgXyg6AWac3FL2y/a72aAGh+7Fr3Jgl5oZFkGuJMUOyGJqRrt84DaeT9cYgghB2TmJVDk6p0p/JABgdOVBdt+Vkrg4rjuLpxF5QZNJzXnAIge+Lu4u2YC9qOFxTtjqK9mt3xu38U7Wc/FGnXnoqy/Z9ptCCJOxuX+7zUyCjsAAAAAElFTkSuQmCC" InformativeScreenshot="7c161cde2afffbb4776107608d2a608c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="841, 636, 26, 23" ElementType="Text" FriendlyName="'ou'" FullSelectorArgument="&lt;webctrl aaname='ou' idx='2' parentid='modal-root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ou' type='' parentid='modal-root' tag='SPAN' class='' check:innerText='ou' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAbCAYAAABr/T8RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEdSURBVEhL7ZSxbsIwEIb7irxF5z4ACzuvwIQ6dEJILGxZMkGlqANdggQDQkIUpCARx+e/TnMYxxLQAjWLT/ql6O4/f7pL4qfGa45HKIC9KYC9KYC9KYC1BNofhHQHCAUTYq8w+izw4viHWzZsqZYv1VlyLSd0nJoDLtBbsflEiA2hZfXcBdyaWSNKhclMohtLvE0J85zzOrKFND13AEtMCjZq6DCqGxt9ieQAVwqDfpW/HRwTvtiXLY8T2WpaG0neq9zt4DEhY988rZuM0iP44Hn8xBmh6fh7a679xzs2h0Mhtnu03yzoPPi6r/rZWn/VQ4gc/0XwNf9xualkz0UnhOSHy+BSf7u5fqTXGm0sf6GQTuXvLxCfCmBPyvENkADnDCr23WYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a8966d4cf634a01c795f495f71f8098b.png" Selector="&lt;html app='chrome.exe' title='Rico - Empresa digital de investimentos' /&gt;" Url="https://arealogada.rico.com.vc/acoes" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
